@@ -1,0 +1,153 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+}
+
+/*SECTION 1*/
+
+div.container-1{
+   /*DESIGN*/
+   background-image: url("../Imagens/section\ 1\ background\ 3.webp");
+   background-repeat: no-repeat;
+   background-size:cover;
+
+   
+}
+
+div.side-a{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+   padding: 100px;
+   width: 50%;
+   /*DESIGN*/
+   background-color: rgba(0, 0, 0, 0.534);
+   color: white;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   border-top-right-radius: 200px;
+   border-bottom-right-radius: 200px;
+}
+
+div.title{
+   border-bottom: 1px solid;
+}
+
+div.title h1{
+   margin-bottom: 10px;
+   font-size: 50px;
+   text-align: center;
+}
+
+div.description h1, div.description p, div.security{
+   margin: 10px;
+   text-align: center;
+}
+
+div.form{
+   display: flex;
+   flex-direction: column;
+   width: 300px;
+   /*DESIGN*/
+   color: white;
+}
+
+div.form input{
+   margin-bottom: 5px;
+   border-radius: 20px;
+   height: 35px;
+   background-color: #389af5;
+   border: solid 2px white;
+}
+
+div.form input::placeholder{
+   font-size: 18px;
+   text-align: center;
+   color: white;
+}
+
+div.button input{
+   width: 177px;
+   margin-top: 15px;
+   width: 300px;
+   /*DESIGN*/
+   font-size: 18px;
+   /* text-align: center; */
+   color: white;
+   background-color: #389af5;
+   border-radius: 20px;
+   height: 35px;
+   cursor: pointer;
+   border: solid 2px white;
+}
+
+/*SECTION 2*/
+
+div.container-2{
+   /*DESIGN*/
+   /* background-color: #0757a2; */
+   background-color: rgb(233, 233, 233);
+   box-shadow:black;
+   /* background-image: url("../Imagens/Section\ 2\ background\ 1.webp");
+   background-repeat: no-repeat;
+   background-size:cover; */
+}
+
+div.class-1, div.class-2, div.class-3, div.aula-bonus{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   /*DESIGN*/
+   background-color: rgba(0, 0, 0, 0.473);
+   color: white;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   box-shadow: 10px 10px #389af5;
+}
+
+div.class-2, div.class-3{
+   margin-top: 30px;
+}
+
+div.class-3{
+   margin-bottom: 30px;
+}
+
+div.class{
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+div.class-title{
+   margin: auto;
+}
+
+div.class-title p{
+   font-size: 25px;
+}
+
+div.class-1 img, div.class-3 img{
+   border-top-right-radius: 150px;
+   border-bottom-right-radius: 150px;
+   width: 300px;
+}
+
+div.class-2 img, div.aula-bonus img{
+   border-top-left-radius: 150px;
+   border-bottom-left-radius: 150px;
+   width: 300px;
+}
+
+div.class-1, div.class-3 {
+   border-top-right-radius: 150px;
+   border-bottom-right-radius: 150px;
+   margin-right: 50px;
+}
+
+div.class-2, div.aula-bonus{
+   border-top-left-radius: 150px;
+   border-bottom-left-radius: 150px;
+   margin-left: 50px;
+   display: flex;
+   justify-content: end;
+}
+

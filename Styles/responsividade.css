@@ -3,11 +3,13 @@
    margin: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 /*SECTION 1*/
 
 div.container-1{
    /*DESIGN*/
-   background-image: url("../Imagens/section\ 1\ background\ 3.webp");
+   background-image: url("../Imagens/section\ 1\ background.webp");
    background-repeat: no-repeat;
    background-size:cover;
 
@@ -83,71 +85,86 @@ div.button input{
 
 /*SECTION 2*/
 
-div.container-2{
-   /*DESIGN*/
-   /* background-color: #0757a2; */
-   background-color: rgb(233, 233, 233);
-   box-shadow:black;
-   /* background-image: url("../Imagens/Section\ 2\ background\ 1.webp");
-   background-repeat: no-repeat;
-   background-size:cover; */
-}
-
 div.class-1, div.class-2, div.class-3, div.aula-bonus{
    display: flex;
    flex-direction: row;
    align-items: center;
+   justify-content: space-between;
+   height: 500px;
    /*DESIGN*/
-   background-color: rgba(0, 0, 0, 0.473);
+   background-color: rgb(0, 0, 0);
    color: white;
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   box-shadow: 10px 10px #389af5;
 }
 
-div.class-2, div.class-3{
-   margin-top: 30px;
-}
-
-div.class-3{
-   margin-bottom: 30px;
-}
-
-div.class{
-   padding-top: 30px;
-   padding-bottom: 30px;
+div.class-img{
+   width: 50%;
+   height: 100%;
 }
 
 div.class-title{
-   margin: auto;
+   padding: 20px;
+   margin: 10px;
+   /*DESIGN*/
+   border: 1px solid;
+   border-radius: 20px;
+   font-size: 35px;
+   font-weight:bold;
 }
 
-div.class-title p{
-   font-size: 25px;
+div.class-title:hover{
+   background-color: aliceblue;
+   color: #0077e6;
 }
 
-div.class-1 img, div.class-3 img{
-   border-top-right-radius: 150px;
-   border-bottom-right-radius: 150px;
-   width: 300px;
+div.class-1 img, div.class-2 img, div.class-3 img, div.aula-bonus img{
+   width: 100%;
+   height: inherit;
+   /*DESIGN*/
+   opacity: 0.7;
+   
 }
 
-div.class-2 img, div.aula-bonus img{
-   border-top-left-radius: 150px;
-   border-bottom-left-radius: 150px;
-   width: 300px;
-}
-
-div.class-1, div.class-3 {
-   border-top-right-radius: 150px;
-   border-bottom-right-radius: 150px;
-   margin-right: 50px;
-}
-
-div.class-2, div.aula-bonus{
-   border-top-left-radius: 150px;
-   border-bottom-left-radius: 150px;
-   margin-left: 50px;
+div.class-content{
+   width: 50%;
+   height: 100%;
    display: flex;
-   justify-content: end;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   padding: 30px;
+   /*DESIGN*/
+   text-align: center;
+   background-color: #0077e6;
+   border: 1px solid white;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/* section.especial-sec{
+   background-color:#0077e6;
+}
+
+div.clip2{
+   height: 50px;
+   background-color:#0077e6;
+
+}
+
+div.clip2{
+   width: 100%;
+   clip-path: ellipse(64% 31% at 50% 33%);
+   /* border: 2px solid; */
+   position: relative;
+   top: 30px;
+   z-index: 1;
+}*/

@@ -3,8 +3,6 @@
    margin: 0;
 }
 
-/* @import url("animation.css"); */
-
 /*SECTION 1*/
 
 div.container-1{
@@ -72,7 +70,6 @@ div.button input{
    width: 300px;
    /*DESIGN*/
    font-size: 18px;
-   /* text-align: center; */
    color: white;
    background-color: #fb6f24;
    border-radius: 20px;
@@ -133,7 +130,6 @@ div.class-content{
    /*DESIGN*/
    text-align: center;
    background-color: #1e6495;
-   /* border: 1px solid white; */
 }
 
 /*SECTION 3*/
@@ -143,54 +139,69 @@ div.professores{
    flex-direction: row;
    flex-wrap: nowrap;
    overflow: auto;
-   /* height: 300px; */
    padding: 15px;
    /*DESIGN*/
    background-color: #5191c1;
 }
 
 div.voight, div.atwater, div.rusek, div.burges, div.rojas, div.halstead, div.upton{
-   /* width: 200px; */
-   /* height: 200px; */
    margin: 15px;
-   /* background-color: #0a4b75; */
-   /* border-radius: 50%; */
+   /*DESIGN*/
    cursor: pointer;
-   /* background-image: url("../Imagens/professores/Atwater.webp"); */
 }
 
 div.professores img{
    width: 250px;
+   /*DESIGN*/
    border-radius: 50%;
    border: 15px solid #0a4b75;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/* section.especial-sec{
-   background-color:#0077e6;
-}
-
-div.clip2{
-   height: 50px;
-   background-color:#0077e6;
-
-}
-
-div.clip2{
+div.professores-desc{
+   display: none;
+   flex-direction: row;
    width: 100%;
-   clip-path: ellipse(64% 31% at 50% 33%);
-   /* border: 2px solid; */
-   position: relative;
-   top: 30px;
-   z-index: 1;
-}*/
+   height: 600px;
+   /*DESIGN*/
+   background-image: url("../Imagens/Section\ 3\ background.webp");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+div.prof-pic, div.prof-bio{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   margin: 30px;
+   /*DESIGN*/
+   background-color: rgba(0, 0, 0, 0.479);
+   backdrop-filter: blur(5px);
+   border: 1px solid #ffff;
+   border-radius: 40px;
+}
+
+div.prof-pic{
+   overflow: hidden;
+}
+
+div.prof-bio{
+   display: flex;
+   flex-direction: column;
+   justify-content:center;
+   padding: 30px;
+   overflow: auto;
+   /*DESIGN*/
+   color: #ffff;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+div.prof-full-name{
+   margin-bottom: 20px;
+   padding-bottom: 20px;
+   border-bottom: 1px solid;
+}
+
+div.prof-full-name p{
+   margin-top: 5px;
+   font-style: italic;
+}

@@ -1,12 +1,6 @@
-const voight = document.querySelector(".voight");
-const atwater = document.querySelector('.atwater');
-const rusek = document.querySelector('.rusek');
-const burges = document.querySelector('.burges');
-const rojas = document.querySelector('.rojas');
-const halstead = document.querySelector('.halstead');
-const upton = document.querySelector('.upton');
 const profs = document.querySelectorAll('.professores div');
 const profdesc = document.querySelector('.professores-desc');
+// const container3 = document.querySelector('.container-3');
 
 const prof = {
     Voight: {
@@ -29,7 +23,7 @@ const prof = {
     },
     Ruzek: {
         name: 'Adam Ruzek',
-        patente: 'Adam Ruzek',
+        patente: 'Detetive',
         bio: 'Adam é um policial da Unidade de Inteligência do Departamento de Polícia de Chicago, trabalhando sob a liderança de Hank Voight. Adam é conhecido por sua inteligência e habilidade para solucionar problemas, tendo uma mente analítica que lhe permite seguir pistas e encontrar soluções para os casos mais complexos. Além disso, ele tem habilidades físicas e treinamento em artes marciais, o que o torna uma força a ser considerada durante as ações policiais mais intensas.',
         photo: {
             url: '../Imagens/professores/png/ruzek.webp',
@@ -93,7 +87,7 @@ profs.forEach(function(element) {
                 const patente1 = prof.Atwater.patente;
                 const bio1 = prof.Atwater.bio;
                 const photourl1 = prof.Atwater.photo.url;
-                const photoalt1 = prof.Atwater.photo.alt;
+                const photoalt1 = prof.Atwater.photo.alt;                
                 biografhyElements();
                 const kevin = new biografhyContent(fullname1, patente1, bio1, photourl1, photoalt1);
                 kevin.setPhoto();
@@ -104,7 +98,7 @@ profs.forEach(function(element) {
                 const patente2 = prof.Ruzek.patente;
                 const bio2 = prof.Ruzek.bio;
                 const photourl2 = prof.Ruzek.photo.url;
-                const photoalt2 = prof.Ruzek.photo.alt;
+                const photoalt2 = prof.Ruzek.photo.alt;                
                 biografhyElements();
                 const adam = new biografhyContent(fullname2, patente2, bio2, photourl2, photoalt2);
                 adam.setPhoto();
@@ -155,13 +149,21 @@ profs.forEach(function(element) {
                 hailey.setBioNameAndPatente();
             break;
             default:
-                console.log('nothin');
-                break;
+                alert('nenhum professor encontrado');
+            break;
         };
     });
 });
 
 function biografhyElements(){
+    if (profdesc.childNodes.length > 0) {
+        while (profdesc.firstChild) {
+            profdesc.removeChild(profdesc.firstChild);
+        }
+    }
+    if(profdesc.style.display = 'none'){
+        profdesc.style.display = 'flex';
+    }
     let divprofpic = document.createElement('div');
     let divprofbio = document.createElement('div');
     divprofpic.setAttribute('class', 'prof-pic');
@@ -183,8 +185,6 @@ function biografhyElements(){
     fullname.appendChild(patente);
     completebio.appendChild(biop);
 }
-
-biografhyElements();
 
 class biografhyContent{
     #name;

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/style.css">
     <link rel="stylesheet" href="Styles/animation.css">
+    <link rel="stylesheet" href="Styles/responsive.css">
     <link rel="shortcut icon" href="Imagens/favicon.webp" type="image/x-icon">
     <script src="scripts/professores.js" defer></script>
     <title>Chicago PD - Workshop Million Cops</title>
@@ -30,7 +31,7 @@
                     <input type="tel" id="phone" placeholder="(00) 00000-0000">
                 </div>
                 <div class="button">
-                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar" class="vibrate">
                 </div>
                 <div class="security">
                     <p>Não enviamos spam nem compartilhamos seus dados com terceiros.</p>
@@ -38,9 +39,6 @@
             </div>
         </div>
     </section>
-    <!-- <section class="especial-sec">
-        <div class="clip2"></div>
-    </section> -->
     <section class="section-2">
         <div class="container-2">
             <div class="class">
@@ -107,7 +105,11 @@
     </section>
     <section class="section-3">
         <div class="container-3">
-            <div class="professores">
+            <div class="prof-title">
+                <h1>Professores</h1>
+                <p>Clique sobre a imagem para abrir</p>
+            </div>
+            <div class="professores">                
                 <div class="voight scale-down-center btn1" id="hank">
                     <img src="Imagens/professores/Voight.webp" alt="Voight">
                 </div>
@@ -134,24 +136,29 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="section-4">
         <div class="container-4">
-            <div class="form">
+            <div class="form-title">
+                <h1>Inscreva-se agora!</h1>
+            </div>
+            <div class="form-2">
                 <label for="name-1">Nome:</label>
                 <input type="text" id="name-1" placeholder="Marcos">
                 <label for="mail-1">E-mail:</label>
                 <input type="email" id="mail-1" placeholder="exemplomarcos@gmail.com">
                 <label for="phone-1">Celular:</label>
                 <input type="tel" id="phone-1" placeholder="(00) 00000-0000">
-                <input type="submit" value="enviar">
+                <div class="button-2">
+                    <input type="submit" value="enviar" class="vibrate">
+                </div>                
+                <div class="security">
+                    <p>Não enviamos spam nem compartilhamos seus dados com terceiros.</p>
+                </div>
             </div>
-            <div class="security">
-                <p>Não enviamos spam nem compartilhamos seus dados com terceiros.</p>
+            <div class="copyright">
+                <p>© 2023 Josther Sampaio Fontes. Todos os direitos reservados. <br>Este material é protegido por direitos autorais. Nenhuma parte deste texto/página/obra pode ser reproduzida ou utilizada de qualquer forma sem a permissão por escrito do proprietário dos direitos autorais. A violação dos direitos autorais pode resultar em ações legais.</p>
             </div>
         </div>
-    </section>
-    <footer>
-
-    </footer>   
+    </section>  
 </body>
 </html>

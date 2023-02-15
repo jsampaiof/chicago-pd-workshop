@@ -107,11 +107,6 @@ div.class-title{
    font-weight:bold;
 }
 
-div.class-title:hover{
-   background-color: aliceblue;
-   color: #1e6495;
-}
-
 div.class-1 img, div.class-2 img, div.class-3 img, div.aula-bonus img{
    width: 100%;
    height: inherit;
@@ -132,7 +127,35 @@ div.class-content{
    background-color: #1e6495;
 }
 
+summary{
+   margin-bottom: 10px;
+   cursor: pointer;
+}
+
 /*SECTION 3*/
+
+div.container-3{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+div.prof-title{
+   padding: 30px;
+   position: relative;
+   top: 25px;
+   text-align: center;
+   background-color: #8CA315;
+   color: #ffff;
+   border-bottom-left-radius: 30px;
+   border-bottom-right-radius: 30px;
+}
+
+div.prof-title p{
+   margin-top: 10px;
+   font-style: italic;
+}
 
 div.professores{
    display: flex;
@@ -146,6 +169,7 @@ div.professores{
 
 div.voight, div.atwater, div.rusek, div.burges, div.rojas, div.halstead, div.upton{
    margin: 15px;
+   margin-top: 35px;
    /*DESIGN*/
    cursor: pointer;
 }
@@ -192,7 +216,6 @@ div.prof-bio{
    overflow: auto;
    /*DESIGN*/
    color: #ffff;
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 div.prof-full-name{
@@ -204,4 +227,82 @@ div.prof-full-name{
 div.prof-full-name p{
    margin-top: 5px;
    font-style: italic;
+}
+
+/* SECTION 4 */
+
+div.container-4{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+   height: auto;
+   /*DESIGN*/
+   background-color: #1e6495;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   color: #ffff;
+}
+
+div.form-title{
+   margin-top: 30px;
+   font-size: 30px;
+   font-style: italic;
+}
+
+div.form-2{
+   display: flex;
+   flex-direction: column;
+   width: 40%;
+   padding: 80px;
+   margin-top: 30px;
+   /*DESIGN*/
+   border: 1px dashed #ffff;
+   background-color: #00000056;
+   border-radius: 50px;
+
+}
+
+div.form-2 input{
+   margin-bottom: 5px;
+   border-radius: 20px;
+   height: 35px;
+   background-color: #fb6f24;
+   border: solid 2px white;
+}
+
+div.form-2 input::placeholder{
+   font-size: 18px;
+   text-align: center;
+   color: white;
+}
+
+div.button-2{
+   display: flex;
+   justify-content: center;
+}
+
+div.button-2 input{
+   width: 177px;
+   margin-top: 15px;
+   /*DESIGN*/
+   font-size: 18px;
+   color: white;
+   background-color: #fb6f24;
+   border-radius: 20px;
+   height: 35px;
+   cursor: pointer;
+   border: solid 2px white;
+}
+
+div.copyright{
+   width: 100%;
+   padding: 20px;
+   padding-top: 50px;
+   margin-top: 30px;
+   /*DESIGN*/
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   color: #ffff;
+   text-align: center;
+   background-color: #8CA315;
+   clip-path: ellipse(57% 77% at 50% 80%);
 }

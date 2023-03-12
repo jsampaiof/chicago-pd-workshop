@@ -1,0 +1,41 @@
+@media (max-width: 500px) {
+    /*SECTION 1*/
+    div.container-1{
+        /*DESIGN*/
+        background-position: center;
+    }
+    
+    div.side-a{
+        position: relative;
+        bottom: 50px;
+        padding-top: 100px !important;
+        padding: 50px;
+        width:auto;
+        /*DESIGN*/
+        border-top-right-radius: unset;
+        border-bottom-right-radius: 150px;
+        border-bottom-left-radius: 150px;
+    }
+     
+    div.title h1{
+        font-size: 35px;
+    }
+
+    div.description h1, div.description p, div.security{
+        font-size:medium;
+    }
+
+    div.form{
+        width: 250px;
+    }
+
+    div.form input::placeholder{
+        font-size: 15px;
+    }
+
+    div.button input{
+        width: 250px;
+        /*DESIGN*/
+        font-size: 15px;
+    }
+}

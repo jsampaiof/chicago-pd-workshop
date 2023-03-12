@@ -1,0 +1,20 @@
+{
+  "name": "chicago-pd-workshop",
+  "version": "1.0.0",
+  "description": "formulario para inscrever-se no workshop com 3 aulas gratuitas, ministradas pelo time de Chicago PD, sobre o passo a passo para ser um policial de sucesso",
+  "main": "professores.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsampaiof/chicago-pd-workshop.git"
+  },
+  "author": "Josther Sampaio Fontes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsampaiof/chicago-pd-workshop/issues"
+  },
+  "homepage": "https://github.com/jsampaiof/chicago-pd-workshop#readme"
+}

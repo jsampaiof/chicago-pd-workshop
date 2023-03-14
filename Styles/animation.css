@@ -100,3 +100,15 @@ div.professores img:hover{
   border-radius: 50%;
   border: 15px solid #8CA315;
 }
+
+/* RESPONSIVE */
+
+/* SECTION 3 */
+
+@media (max-width: 500px) {
+  div.professores img:hover{
+    width: 180px;
+    /*DESIGN*/
+    border: 11px solid #8CA315;
+  }
+}

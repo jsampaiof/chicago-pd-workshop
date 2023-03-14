@@ -245,9 +245,10 @@ div.container-4{
 }
 
 div.form-title{
-   margin-top: 30px;
+   margin: 30px;
    font-size: 30px;
    font-style: italic;
+   text-align: center;
 }
 
 div.form-2{
@@ -255,7 +256,7 @@ div.form-2{
    flex-direction: column;
    width: 40%;
    padding: 80px;
-   margin-top: 30px;
+   /* margin-top: 30px; */
    /*DESIGN*/
    border: 1px dashed #ffff;
    background-color: #00000056;

@@ -38,4 +38,102 @@
         /*DESIGN*/
         font-size: 15px;
     }
+
+    /*SECTION 2*/
+
+    div.class-1, div.class-2, div.class-3, div.aula-bonus{
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        height: unset;
+    }
+
+    div.class-2, div.aula-bonus{
+        flex-direction: column-reverse;
+    }
+
+    div.class-img{
+        width: 100%;
+        height: auto;
+    }
+
+    div.class-title{
+        margin: 8px;
+        /*DESIGN*/
+        font-size: 25px;
+    }
+
+    div.class-1 img, div.class-2 img, div.class-3 img, div.aula-bonus img{
+        width: 100%;
+    }
+
+    div.class-content{
+        width: auto;
+        height: auto;    
+    }
+
+    div.cont-2{
+        width: 100%;
+    }
+
+    /*SECTION 3*/
+
+    div.professores img{
+        width: 180px;
+        /*DESIGN*/
+        border: 11px solid #0a4b75;
+    }
+
+    div.professores-desc{
+        display: none;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        /*DESIGN*/
+        background-size: cover;
+        background-position: center;
+    }
+
+    div.prof-pic, div.prof-bio{
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        /*DESIGN*/
+        border-radius: 25px;
+    }
+    
+    div.prof-pic img{
+        width: 100%;
+    }
+    
+    div.prof-bio{
+        height: 300px;
+    }
+
+    /* SECTION 4 */
+
+    div.form-2{
+        width: 85%;
+        padding: 40px;
+        /*DESIGN*/
+        border-radius: 40px;
+    }
+
+    div.form-2 input::placeholder{
+        font-size: 15px;
+    }
+
+    div.copyright{
+        width: auto;
+        padding: 30px;
+        padding-top: 70px;
+        margin-top: 30px;
+        /*DESIGN*/
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #ffff;
+        text-align: center;
+        background-color: #8CA315;
+        clip-path: ellipse(70% 77% at 50% 80%);
+    }
 }

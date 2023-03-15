@@ -105,7 +105,15 @@ div.professores img:hover{
 
 /* SECTION 3 */
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
+  div.professores img:hover{
+    width: 180px;
+    /*DESIGN*/
+    border: 11px solid #8CA315;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
   div.professores img:hover{
     width: 180px;
     /*DESIGN*/

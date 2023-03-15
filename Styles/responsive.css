@@ -1,9 +1,5 @@
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     /*SECTION 1*/
-    div.container-1{
-        /*DESIGN*/
-        background-position: center;
-    }
     
     div.side-a{
         position: relative;
@@ -34,7 +30,7 @@
     }
 
     div.button input{
-        width: 250px;
+        width: 200px;
         /*DESIGN*/
         font-size: 15px;
     }
@@ -68,13 +64,13 @@
     }
 
     div.class-content{
-        width: auto;
+        width: 100%;
         height: auto;    
     }
 
-    div.cont-2{
+    /* div.cont-2{
         width: 100%;
-    }
+    } */
 
     /*SECTION 3*/
 
@@ -98,7 +94,7 @@
         width: auto;
         display: flex;
         justify-content: space-between;
-        margin: 20px;
+        margin: 30px;
         /*DESIGN*/
         border-radius: 25px;
     }
@@ -135,5 +131,77 @@
         text-align: center;
         background-color: #8CA315;
         clip-path: ellipse(70% 77% at 50% 80%);
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1000px){
+    /*SECTION 1*/
+
+    div.title h1{
+        font-size: 40px;
+    }
+
+    div.description h1, div.description p, div.security{
+        font-size: medium;
+    }
+
+    div.form{
+        width: 250px;
+    }
+
+    div.form input::placeholder{
+        font-size: 15px;
+    }
+
+    div.button input{
+        width: 200px;
+        /*DESIGN*/
+        font-size: 15px;
+    }
+
+    /*SECTION 2*/
+
+    div.class-1, div.class-2, div.class-3, div.aula-bonus{
+        height: 350px;
+    }
+
+    div.class-title{
+        margin: 8px;
+        /*DESIGN*/
+        font-size: 25px;
+    }
+
+    /*SECTION 3*/
+
+    div.professores img{
+        width: 180px;
+        /*DESIGN*/
+        border: 11px solid #0a4b75;
+    }
+
+    div.professores-desc{
+        display: none;
+        width: auto;
+        height: 450px;
+        /*DESIGN*/
+    }
+
+    div.prof-pic img{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+
+    /* SECTION 4 */
+
+    div.form-2{
+        width: 70%;
+        padding: 40px;
+        /*DESIGN*/
+        border-radius: 40px;
+    }
+
+    div.form-2 input::placeholder{
+        font-size: 15px;
     }
 }

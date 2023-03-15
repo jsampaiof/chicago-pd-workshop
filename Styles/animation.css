@@ -120,3 +120,11 @@ div.professores img:hover{
     border: 11px solid #8CA315;
   }
 }
+
+@media (min-width: 1501px){
+  div.professores img:hover{
+    width: 300px;
+    /*DESIGN*/
+    border: 15px solid #8CA315;
+  }
+}

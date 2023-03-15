@@ -68,10 +68,6 @@
         height: auto;    
     }
 
-    /* div.cont-2{
-        width: 100%;
-    } */
-
     /*SECTION 3*/
 
     div.professores img{
@@ -123,13 +119,9 @@
     div.copyright{
         width: auto;
         padding: 30px;
-        padding-top: 70px;
-        margin-top: 30px;
+        padding-top: 60px;
         /*DESIGN*/
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        color: #ffff;
-        text-align: center;
-        background-color: #8CA315;
+        font-size: smaller;
         clip-path: ellipse(70% 77% at 50% 80%);
     }
 }
@@ -180,16 +172,12 @@
     }
 
     div.professores-desc{
-        display: none;
         width: auto;
         height: 450px;
-        /*DESIGN*/
     }
 
-    div.prof-pic img{
-        width: 100%;
-        position: absolute;
-        bottom: 0;
+    div.prof-bio{
+        justify-content:unset;
     }
 
     /* SECTION 4 */
@@ -203,5 +191,105 @@
 
     div.form-2 input::placeholder{
         font-size: 15px;
+    }
+}
+
+@media (min-width: 1501px){
+    /*SECTION 1*/
+
+    div.title h1{
+        font-size: 65px;
+    }
+
+    div.description h1, div.description p, div.security{
+        font-size:x-large;
+    }
+
+    div.form{
+        width: 350px;
+        font-size: 20px;
+    }
+
+    div.form input{
+        height: 40px;
+    }
+
+    div.form input::placeholder{
+        font-size: 23px;
+    }
+
+    div.button input{
+        width: 250px;
+        /*DESIGN*/
+        font-size: 23px;
+        height: 40px;
+    }
+
+    /*SECTION 2*/
+
+    div.class-1, div.class-2, div.class-3, div.aula-bonus{
+        height: 600px;
+    }
+
+    div.class-title{
+        margin: 8px;
+        /*DESIGN*/
+        font-size: 50px;
+    }
+
+    details{
+        font-size: 23px;
+    }
+
+    /*SECTION 3*/
+
+    div.prof-title h1{
+        font-size: 50px;
+    }
+
+    div.prof-title p{
+        font-size: 23px;
+    }
+
+    div.professores img{
+        width: 300px;
+        /*DESIGN*/
+        border: 15px solid #0a4b75;
+    }
+
+    div.prof-bio{
+        font-size: 27px;
+    }
+
+    /* SECTION 4 */
+
+    div.form-title{
+        font-size: 35px;
+    }
+
+    div.form-2{
+        font-size: 20px;
+    }
+
+    div.form-2 input{
+        margin-bottom: 5px;
+        border-radius: 20px;
+        width: 70%;
+        height: 40px;
+    }
+     
+    div.form-2 input::placeholder{
+        font-size: 23px;
+    }
+
+    div.button-2 input{
+        width: 250px;
+        /*DESIGN*/
+        font-size: 23px;
+        height: 40px;
+    }
+
+    div.copyright{
+        font-size: larger;
     }
 }

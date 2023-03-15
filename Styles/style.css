@@ -196,8 +196,8 @@ div.professores img{
 div.professores-desc{
    display: none;
    flex-direction: row;
-   width: 100%;
-   height: 600px;
+   width: auto;
+   height: auto;
    /*DESIGN*/
    background-image: url("../Imagens/Section\ 3\ background.webp");
    background-repeat: no-repeat;
@@ -219,6 +219,12 @@ div.prof-pic, div.prof-bio{
 
 div.prof-pic{
    overflow: hidden;
+}
+
+div.prof-pic img{
+   width: 100%;
+   /* position: absolute; */
+   bottom: 0;
 }
 
 div.prof-bio{
@@ -275,7 +281,6 @@ div.form-2{
    align-items: center;
    width: 40%;
    padding: 80px;
-   /* margin-top: 30px; */
    /*DESIGN*/
    border: 1px dashed #ffff;
    background-color: #00000056;

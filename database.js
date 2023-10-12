@@ -9,6 +9,8 @@ const pool = mysql.createConnection({
     database: process.env.MYSQL_DATABASE
 }).promise()
 
+async class subscribers{}
+
 async function getSubscribers(){
     const [response] = await pool.query(
         `SELECT * 
@@ -20,9 +22,12 @@ async function getSubscribers(){
 async function setSubscribers(personName, email, phone){
     const setSub = await pool.query(
         `INSERT INTO subscribers(personName, email, phone)
-        VALUES(?, ?, '?')`, [personName, email, phone]
+        VALUES(?, ?, ?)`, [personName, email, phone]
     );
     // console.log('data sent');
 };
 
-export {getSubscribers, setSubscribers}
+export {getSubscribers ,setSubscribers };
+
+const getsubs = await getSubscribers();
+console.log(getsubs);

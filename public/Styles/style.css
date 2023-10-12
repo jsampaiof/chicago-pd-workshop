@@ -45,7 +45,7 @@ div.description h1, div.description p, div.security{
    text-align: center;
 }
 
-div.form{
+form{
    display: flex;
    flex-direction: column;
    width: 300px;
@@ -53,7 +53,7 @@ div.form{
    color: white;
 }
 
-div.form input{
+form input{
    margin-bottom: 5px;
    border-radius: 20px;
    height: 35px;
@@ -61,7 +61,7 @@ div.form input{
    border: solid 2px white;
 }
 
-div.form input::placeholder{
+form input::placeholder{
    font-size: 18px;
    text-align: center;
    color: white;

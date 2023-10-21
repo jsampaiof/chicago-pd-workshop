@@ -21,15 +21,15 @@
         font-size:medium;
     }
 
-    div.form{
+    .form{
         width: 250px;
     }
 
-    div.form input::placeholder{
+    .form input::placeholder{
         font-size: 15px;
     }
 
-    div.button input{
+    .button input{
         width: 200px;
         /*DESIGN*/
         font-size: 15px;
@@ -105,14 +105,14 @@
 
     /* SECTION 4 */
 
-    div.form-2{
+    .form-2{
         width: 85%;
         padding: 40px;
         /*DESIGN*/
         border-radius: 40px;
     }
 
-    div.form-2 input::placeholder{
+    .form-2 input::placeholder{
         font-size: 15px;
     }
 
@@ -137,15 +137,15 @@
         font-size: medium;
     }
 
-    div.form{
+    .form{
         width: 250px;
     }
 
-    div.form input::placeholder{
+    .form input::placeholder{
         font-size: 15px;
     }
 
-    div.button input{
+    .button input{
         width: 200px;
         /*DESIGN*/
         font-size: 15px;
@@ -182,14 +182,14 @@
 
     /* SECTION 4 */
 
-    div.form-2{
+    .form-2{
         width: 70%;
         padding: 40px;
         /*DESIGN*/
         border-radius: 40px;
     }
 
-    div.form-2 input::placeholder{
+    .form-2 input::placeholder{
         font-size: 15px;
     }
 }
@@ -205,20 +205,20 @@
         font-size:x-large;
     }
 
-    div.form{
+    .form{
         width: 350px;
         font-size: 20px;
     }
 
-    div.form input{
+    .form input{
         height: 40px;
     }
 
-    div.form input::placeholder{
+    .form input::placeholder{
         font-size: 23px;
     }
 
-    div.button input{
+    .button input{
         width: 250px;
         /*DESIGN*/
         font-size: 23px;
@@ -267,11 +267,11 @@
         font-size: 35px;
     }
 
-    div.form-2{
+    .form-2{
         font-size: 20px;
     }
 
-    div.form-2 input{
+    .form-2 input{
         margin-bottom: 5px;
         border-radius: 20px;
         width: 70%;

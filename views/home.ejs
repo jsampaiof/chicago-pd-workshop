@@ -140,20 +140,20 @@
             <div class="form-title">
                 <h1>Inscreva-se agora!</h1>
             </div>
-            <div class="form-2">
-                <label for="name-1">Nome:</label>
-                <input type="text" id="name-1" placeholder="Marcos">
-                <label for="mail-1">E-mail:</label>
-                <input type="email" id="mail-1" placeholder="exemplomarcos@gmail.com">
-                <label for="phone-1">Celular:</label>
-                <input type="tel" id="phone-1" placeholder="(00) 00000-0000">
+            <form class="form-2" method="POST" action="/newsub">
+                <label for="name">Nome Completo:</label>
+                <input type="text" name="fullName" id="name" placeholder="Marcos Santos Vieira">
+                <label for="email">E-mail:</label>
+                <input type="email" name="userEmail" id="email" placeholder="exemplomarcos@gmail.com">
+                <label for="phone">Celular:</label>
+                <input type="tel" name="userPhone" id="phone" placeholder="74991736985">
                 <div class="button-2">
-                    <input type="submit" value="enviar" class="vibrate">
-                </div>                
+                    <input type="submit" value="Enviar" class="vibrate">
+                </div>
                 <div class="security">
                     <p>Não enviamos spam nem compartilhamos seus dados com terceiros.</p>
                 </div>
-            </div>
+            </form>
             <div class="copyright">
                 <p>© 2023 Josther Sampaio Fontes. Todos os direitos reservados. <br>Este material é protegido por direitos autorais. Nenhuma parte deste texto/página/obra pode ser reproduzida ou utilizada de qualquer forma sem a permissão por escrito do proprietário dos direitos autorais. A violação dos direitos autorais pode resultar em ações legais.</p>
             </div>

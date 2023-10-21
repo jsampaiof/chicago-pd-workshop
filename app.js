@@ -1,5 +1,5 @@
 import express from "express";
-import { getSubscribers, setSubscribers } from "./database.js";
+import { Subscribers } from "./database.js";
 import { StatusCodes } from "http-status-codes";
 import bodyParser from "body-parser";
 
@@ -17,16 +17,16 @@ app.listen(PORT, () => {
 });
 
 app.get('/', (req, res) => {
-    res.status(StatusCodes.OK).render('index');
+    res.status(StatusCodes.OK).render('home');
 });
 
 app.post('/newsub', async(req, res) => {
     const name = req.body.fullName;
     const email = req.body.userEmail;
     const phone = req.body.userPhone;
-    // console.log(typeof name, typeof email, typeof phone);
 
-    const setSub = setSubscribers(name, email, phone);
+    const setSub = new Subscribers(name, email, phone);
+    const result = await setSub.setSubscribers()
 
-    res.send('OBRIGADO <3');
+    res.send(`OBRIGADO, ${name} <3`);
 })
